@@ -6,7 +6,7 @@ class ttocr:
     def recognize(gt: str, challenge: str):
         submit_url = "http://api.ttocr.com/api/recognize"
         params = {
-            "appkey": "9f4aace9e81822ef9906bedfcb931149",
+            "appkey": "",
             "gt": gt,
             "challenge": challenge,
             "itemid": "388",
@@ -24,7 +24,7 @@ class ttocr:
     def results(resultid: str):
         result_url = "http://api.ttocr.com/api/results"
         params = {
-            "appkey": "9f4aace9e81822ef9906bedfcb931149",
+            "appkey": "",
             "resultid": resultid
         }
         if resultid == "":
