@@ -57,9 +57,4 @@ jobs:
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/mihoyo-bbs:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/mihoyo-bbs:${{ steps.date.outputs.today }} 
-            ${{ secrets.DOCKERHUB_USERNAME }}/mihoyo-bbs:${{ env.COMMIT_HASH }}
-            ghcr.io/${{ env.LOWER_ACTOR }}/mihoyo-bbs:latest
-            ghcr.io/${{ env.LOWER_ACTOR }}/mihoyo-bbs:${{ steps.date.outputs.today }}
-            ghcr.io/${{ env.LOWER_ACTOR }}/mihoyo-bbs:${{ env.COMMIT_HASH }}
+            sevennine233/mihoyo-bbs:latest
